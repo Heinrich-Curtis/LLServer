@@ -14,7 +14,9 @@ FetchContent_Declare(
     # For Windows: Prevent overriding the parent project's compiler/linker settings
     set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
     FetchContent_MakeAvailable(googletest)
-
+#SQLite
+include_directories(/usr/include/)
+link_directories(/usr/lib)
 #Project files build
 add_subdirectory(bin)
 #add_subdirectory(libs) 

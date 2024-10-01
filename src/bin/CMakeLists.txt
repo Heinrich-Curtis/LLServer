@@ -5,9 +5,10 @@ add_executable(
 )
 target_link_libraries(
 	main	
-	GTest::gtest_main
+	#GTest::gtest_main
+	sqlite3
 	)
 
 
-	include(GoogleTest)
-	gtest_discover_tests(main)
+	#include(GoogleTest)
+	#gtest_discover_tests(main)
